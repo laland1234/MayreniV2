@@ -68,13 +68,17 @@
     height: 50px;
     border-radius: 50px;
     margin-top: 5%;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
+    width:90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .custom-btn:hover {
-    background-color: #ffecec; /* Change background color on hover */
-    color: #ff5a5a; /* Change text color on hover */
+  transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    
 }
 
 
@@ -85,14 +89,14 @@
         font-size: 1.1rem; /* Adjust font size for the top box as well */
         width: 90%; /* Adjust width for smaller screens */
         padding: 15px 26px; /* Adjust padding for smaller screens */
-        transform: translateY(-60px); /* Move the element 20px upwards */
+        transform: translateY(-90px); /* Move the element 20px upwards */
     }
     
     .rounded-box-light {
         font-size: 1.1rem; /* Slightly smaller font size */
         width: 100%; /* Slightly reduce the width for smaller screens */
         padding: 15px 30px; /* Adjust padding for smaller screens */
-        transform: translateY(-60px); /* Move the element 20px upwards */
+        transform: translateY(-90px); /* Move the element 20px upwards */
     }
     .text1{
         font-size: 1.1rem;
@@ -116,6 +120,56 @@
         color: #ff5a5a; /* Change text color on hover */
     }
 
+
+
+
+
+
+/*BIG SIZE SCREEN PHONE L*/
+    @media (min-width: 425px) and (max-width: 768px) {
+ .rounded-box {
+        font-size: 1.1rem; /* Adjust font size for the top box as well */
+        width: 70%; /* Adjust width for smaller screens */
+        padding: 15px 26px; /* Adjust padding for smaller screens */
+        transform: translateY(-140px); /* Move the element 20px upwards */
+    }
+    
+    .rounded-box-light {
+        font-size: 1.1rem; /* Slightly smaller font size */
+        width: 80%; /* Slightly reduce the width for smaller screens */
+        padding: 15px 30px; /* Adjust padding for smaller screens */
+        transform: translateY(-140px); /* Move the element 20px upwards */
+    }
+    .text1{
+        font-size: 1.1rem;
+        margin-top: -15%;
+        transform: translateY(-70px); /* Move the element 20px upwards */
+
+
+    }
+
+    .custom-btn {
+      background-color: white; /* Keep the background white */
+      color: #ff5a5a; /* Keep the text color black */
+      height: 50px;
+      border-radius: 50px;
+      margin-top: 5%;
+      font-size: 17px;
+      width: 40%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for movement and shadow */
+      transform: translateY(-60px); /* Move the element 20px upwards */
+
+  }
+  
+  .custom-btn:hover {
+      transform: translateY(-3px); /* Move the button slightly up when hovered */
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  }
+  
+
+
+    }
 
 
 
