@@ -1,0 +1,125 @@
+.navbar-brand, .nav-link {
+    font-size: 1.5rem; /* Adjust the size as needed */
+  }
+
+  /* Add space between navbar items */
+  .nav-item {
+    margin-right: 1rem; /* Adjust the spacing between items as needed */
+  }
+
+  /* Make the navbar toggler (hamburger) icon white */
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  /* Fixes: Remove the button background, shadow, and border */
+  .navbar-toggler {
+    background-color: transparent; /* Remove button background */
+    border: none; /* Remove button border */
+    box-shadow: none; /* Remove any shadow around the button */
+  }
+
+  /* Optional: Add hover effect if desired */
+  .navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+  }
+
+
+
+  .full-screen {
+    background-color: #F65656;
+    height: 90vh; /* Full viewport height */
+    color: white;
+  }
+
+
+/* first page*/
+  .rounded-box {
+    background-color: white;
+    color: #ff5a5a;
+    padding: 30px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 2.0rem;
+    text-align: center;
+    width: fit-content;
+}
+
+.rounded-box-light {
+    background-color: #ffecec;
+    color: #ff5a5a;
+    padding: 30px 55px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 2.0rem;
+    text-align: center;
+    width: fit-content;
+    margin-top: -10px;
+}
+
+.text1 {
+    font-size: 1.7rem;
+    margin-top: 18px;;
+}
+
+.custom-btn {
+    background-color: white; /* Change the background to white */
+    color: #ff5a5a; /* Change the text color */
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 5%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.custom-btn:hover {
+    background-color: #ffecec; /* Change background color on hover */
+    color: #ff5a5a; /* Change text color on hover */
+}
+
+
+
+
+@media (max-width: 700px) {
+    .rounded-box {
+        font-size: 1.1rem; /* Adjust font size for the top box as well */
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 15px 26px; /* Adjust padding for smaller screens */
+        transform: translateY(-60px); /* Move the element 20px upwards */
+    }
+    
+    .rounded-box-light {
+        font-size: 1.1rem; /* Slightly smaller font size */
+        width: 100%; /* Slightly reduce the width for smaller screens */
+        padding: 15px 30px; /* Adjust padding for smaller screens */
+        transform: translateY(-60px); /* Move the element 20px upwards */
+    }
+    .text1{
+        font-size: 1.1rem;
+        margin-top: -15%;
+
+    }
+
+    .custom-btn {
+        background-color: white; /* Change the background to white */
+        color: #000000; /* Change the text color */
+        height: 50px;
+        border-radius: 50px;
+        margin-top: 5%;
+        font-size: 18px;
+        width: 30% ;
+
+    }
+    
+    .custom-btn:hover {
+        background-color: #ffecec; /* Change background color on hover */
+        color: #ff5a5a; /* Change text color on hover */
+    }
+
+
+
+
+
+
+
+}
