@@ -45,6 +45,8 @@
     width: fit-content;
 }
 
+
+
 .rounded-box-light {
     background-color: #ffecec;
     color: #ff5a5a;
@@ -63,14 +65,14 @@
 }
 
 .custom-btn {
-    background-color: white; /* Change the background to white */
+    background-color: #ffecec; /* Change the background to white */
     color: #ff5a5a; /* Change the text color */
     height: 50px;
     border-radius: 50px;
     margin-top: 5%;
     font-size: 19px;
     font-weight: bold;
-    width:90%;
+    width:30%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
       transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -78,8 +80,148 @@
 .custom-btn:hover {
   transform: translateY(-3px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    
+    background-color: #ffecec;
+    color: #F65656;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*PAGE 2*/
+
+
+/* Full-screen container settings */
+.full-screen {
+  background-color: #F65656;
+  height: 100vh; /* Full viewport height */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main heading styling */
+.welcome-heading {
+  font-size: 2.8rem;
+  color: #ff5a5a;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Highlighted word styling */
+.highlighted-word {
+  background-color: #ffecec;
+  color: #ff5a5a;
+  padding: 0.2em 0.5em;
+  border-radius: 10px;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 1.3rem;
+  color: #ff5a5a;
+  transform: translateY(30px); /* Move the element 20px upwards */
+
+
+}
+
+.box {
+  background-color: #F65656;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+
+/* Common Box Styles */
+.rounded-box {
+  border-radius: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Red Box Style */
+.info-box-red {
+  background-color: #ff5a5a;
+  color: white;
+  font-size: 1.2rem;
+  height: 90%;
+  padding-top: 90%;
+
+}
+
+/* Light Pink Box Style */
+.info-box-light-pink {
+  background-color: #ffecec;
+  color: #ff5a5a;
+  font-size: 1.3rem;
+  height: 90%;
+
+
+}
+/* Icon Styling */
+.box-icon {
+  height: auto;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.box-icon-small {
+  width: 40%;
+}
+
+.box-icon-medium {
+  width: 50%; /* Default size for other box icons */
+}
+
+.box-icon-large {
+  width: 40%; /* Default size for other box icons */
+  margin-top: 1%;
+}
+
+
+.rounded-box:hover .box-icon {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+
+
+
+
+
+/*page 3 */
+
+.full-screen1 {
+  background-color: #F65656;
+  height: 100vh; /* Full viewport height */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -104,39 +246,62 @@
 
     }
 
-    .custom-btn {
-        background-color: white; /* Change the background to white */
-        color: #000000; /* Change the text color */
-        height: 50px;
-        border-radius: 50px;
-        margin-top: 5%;
-        font-size: 18px;
-        width: 30% ;
-
-    }
     
-    .custom-btn:hover {
-        background-color: #ffecec; /* Change background color on hover */
-        color: #ff5a5a; /* Change text color on hover */
-    }
+    .custom-btn {
+      font-size: 19px; /* Maintain original font size */
+      width: 30%; /* Adjusted width for smaller screens */
+      transform: translateY(-3px);
 
+  }
+  
+  .custom-btn:hover {
+    transform: translateY(-3px);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      background-color: #ffecec;
+      color: #F65656;
+  }
+
+
+
+  .welcome-heading {
+  font-size: 2.8rem;
+  color: #ff5a5a;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Highlighted word styling */
+/* Highlighted word styling */
+.highlighted-word {
+  background-color: #ffecec;
+  color: #ff5a5a;
+  padding: 0.2em 0.5em;
+  border-radius: 10px;
+  position: relative; /* Enable positioning adjustments */
+  top: 15px; /* Move the element down by 5px; adjust as needed */
+}
 
 
 
 
 
 /*BIG SIZE SCREEN PHONE L*/
-    @media (min-width: 425px) and (max-width: 768px) {
+    @media (min-width: 400px) and (max-width: 768px) {
+      .mb-4 {
+        margin-bottom: 1.5rem !important;
+        margin-left: 45%;
+        margin-top:30%;
+    }
  .rounded-box {
-        font-size: 1.1rem; /* Adjust font size for the top box as well */
-        width: 70%; /* Adjust width for smaller screens */
+        font-size: 1rem; /* Adjust font size for the top box as well */
+        width: 60%; /* Adjust width for smaller screens */
         padding: 15px 26px; /* Adjust padding for smaller screens */
         transform: translateY(-140px); /* Move the element 20px upwards */
     }
     
     .rounded-box-light {
-        font-size: 1.1rem; /* Slightly smaller font size */
-        width: 80%; /* Slightly reduce the width for smaller screens */
+        font-size: 1rem; /* Slightly smaller font size */
+        width: 70%; /* Slightly reduce the width for smaller screens */
         padding: 15px 30px; /* Adjust padding for smaller screens */
         transform: translateY(-140px); /* Move the element 20px upwards */
     }
@@ -147,29 +312,99 @@
 
 
     }
-
     .custom-btn {
-      background-color: white; /* Keep the background white */
-      color: #ff5a5a; /* Keep the text color black */
-      height: 50px;
-      border-radius: 50px;
-      margin-top: 5%;
-      font-size: 17px;
-      width: 40%;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for movement and shadow */
-      transform: translateY(-60px); /* Move the element 20px upwards */
+      font-size: 15px; /* Font size for mid-range screen sizes */
+      width: 40%; /* Width adjusted for mid-sized screens */
+      transform: translateY(-3px);
 
   }
   
   .custom-btn:hover {
-      transform: translateY(-3px); /* Move the button slightly up when hovered */
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
   }
   
+}
+
+
+    /*mobile S AND M SIZE*/
+    
+        /* Media query to target screens between 320px and 375px */
+    @media (min-width: 320px) and (max-width: 390px) {
+  .test{
+    margin-top: 40%;
+  }
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+    margin-left: 35%;
+}
+      .rounded-box {
+        font-size: 1rem; /* Adjust font size for the top box as well */
+        width: 66%; /* Adjust width for smaller screens */
+        padding: 15px 26px; /* Adjust padding for smaller screens */
+        transform: translateY(-140px); /* Move the element 20px upwards */
+    }
+    
+    .rounded-box-light {
+        font-size: 1rem; /* Slightly smaller font size */
+        width: 80%; /* Slightly reduce the width for smaller screens */
+        padding: 15px 30px; /* Adjust padding for smaller screens */
+        transform: translateY(-140px); /* Move the element 20px upwards */
+    }
+
+    .box{
+      width:130%;
+    }
+
+    .info-box-red {
+      background-color: #ff5a5a;
+      color: white;
+      font-size: 1.2rem;
+      height: 90%;
+      padding-top: 90%;
+
+    
+    }
+    
+    /* Light Pink Box Style */
+    .info-box-light-pink {
+      background-color: #ffecec;
+      color: #ff5a5a;
+      font-size: 1.3rem;
+      height: 90%;
+    
+    
+    }
+
+
+
+
+
+
+
+
+
+
+    .text1{
+        font-size: 1.1rem;
+        margin-top: -15%;
+        transform: translateY(-70px); /* Move the element 20px upwards */
 
 
     }
+
+      .custom-btn {
+        font-size: 15px; /* Font size for smaller screens */
+        width: 57%; /* Adjusted width for smallest screens */
+
+    }
+  
+  
+  .custom-btn:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+
+  }
+  
+}
 
 
 
